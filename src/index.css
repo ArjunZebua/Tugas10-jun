@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.book-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+header {
+  background-color: #1e272e;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.search-bar svg {
+  width: 20px;
+  height: 20px;
+  color: #666;
+}
+
+.search-bar button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sort-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.sort-bar select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.book {
+  width: 30%;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-image {
+  max-width: 150px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  color: #999;
+  cursor: pointer;
+}
+
+.book h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #333;
+  text-align: center;
+}
+
+.book p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #555;
+  text-align: center;
+}
+
+.book button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+footer {
+  background-color: #1e272e;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+p:not(.book) {
+  text-align: center;
+  font-size: 18px;
+  color: #999;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 80%;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.book-list {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px;
+}
+
+.book {
+  min-width: 200px;
+  margin-right: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 15px;
+  transition: box-shadow 0.3s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-list .book:last-child {
+  margin-right: 0;
+}
+
+.info-icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #3498db; /* Ganti warna sesuai kebutuhan */
+  margin-top: 10px; /* Spasi di atas teks */
+}
+
+.info-icon span {
+  margin-left: 5px; /* Spasi antara ikon dan teks */
+  font-size: 14px; /* Ukuran font untuk teks */
+}
